@@ -18,7 +18,7 @@ exports.findAll = async (req, res) => {
 exports.findById = async (req, res) => {
   const userIdReq = req.params.userId;
 
-  const user = await Student.find({
+  const user = await User.find({
     userId: userIdReq,
   });
 
